@@ -39,17 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E20DB8E422EFF4EE001856CE /* LoginForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20DB8E422EFF4EE001856CE /* SignUpForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20DB8E722EFF4EE001856CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E20DB8E922EFF4EE001856CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E20DB8EC22EFF4EE001856CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E20DB8EE22EFF4EF001856CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20DB8F122EFF4EF001856CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20DB8F322EFF4EF001856CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E20DB8F822EFF4EF001856CE /* LoginFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20DB8F822EFF4EF001856CE /* SignUpFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20DB8FC22EFF4EF001856CE /* LoginFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormTests.swift; sourceTree = "<group>"; };
 		E20DB8FE22EFF4EF001856CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E20DB90322EFF4EF001856CE /* LoginFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20DB90322EFF4EF001856CE /* SignUpFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20DB90722EFF4EF001856CE /* LoginFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormUITests.swift; sourceTree = "<group>"; };
 		E20DB90922EFF4EF001856CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E20DB91622EFF974001856CE /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
@@ -90,9 +90,9 @@
 		E20DB8DB22EFF4EE001856CE = {
 			isa = PBXGroup;
 			children = (
-				E20DB8E622EFF4EE001856CE /* LoginForm */,
-				E20DB8FB22EFF4EF001856CE /* LoginFormTests */,
-				E20DB90622EFF4EF001856CE /* LoginFormUITests */,
+				E20DB8E622EFF4EE001856CE /* SignUpForm */,
+				E20DB8FB22EFF4EF001856CE /* SignUpFormTests */,
+				E20DB90622EFF4EF001856CE /* SignUpFormUITests */,
 				E20DB8E522EFF4EE001856CE /* Products */,
 				E20DB91522EFF974001856CE /* Frameworks */,
 			);
@@ -101,14 +101,14 @@
 		E20DB8E522EFF4EE001856CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E20DB8E422EFF4EE001856CE /* LoginForm.app */,
-				E20DB8F822EFF4EF001856CE /* LoginFormTests.xctest */,
-				E20DB90322EFF4EF001856CE /* LoginFormUITests.xctest */,
+				E20DB8E422EFF4EE001856CE /* SignUpForm.app */,
+				E20DB8F822EFF4EF001856CE /* SignUpFormTests.xctest */,
+				E20DB90322EFF4EF001856CE /* SignUpFormUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E20DB8E622EFF4EE001856CE /* LoginForm */ = {
+		E20DB8E622EFF4EE001856CE /* SignUpForm */ = {
 			isa = PBXGroup;
 			children = (
 				E20DB8E722EFF4EE001856CE /* AppDelegate.swift */,
@@ -120,25 +120,25 @@
 				E20DB91D22F002A8001856CE /* String+.swift */,
 				E20DB91F22F02CE5001856CE /* SubmitButton.swift */,
 			);
-			path = LoginForm;
+			path = SignUpForm;
 			sourceTree = "<group>";
 		};
-		E20DB8FB22EFF4EF001856CE /* LoginFormTests */ = {
+		E20DB8FB22EFF4EF001856CE /* SignUpFormTests */ = {
 			isa = PBXGroup;
 			children = (
 				E20DB8FC22EFF4EF001856CE /* LoginFormTests.swift */,
 				E20DB8FE22EFF4EF001856CE /* Info.plist */,
 			);
-			path = LoginFormTests;
+			path = SignUpFormTests;
 			sourceTree = "<group>";
 		};
-		E20DB90622EFF4EF001856CE /* LoginFormUITests */ = {
+		E20DB90622EFF4EF001856CE /* SignUpFormUITests */ = {
 			isa = PBXGroup;
 			children = (
 				E20DB90722EFF4EF001856CE /* LoginFormUITests.swift */,
 				E20DB90922EFF4EF001856CE /* Info.plist */,
 			);
-			path = LoginFormUITests;
+			path = SignUpFormUITests;
 			sourceTree = "<group>";
 		};
 		E20DB91522EFF974001856CE /* Frameworks */ = {
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E20DB8E322EFF4EE001856CE /* LoginForm */ = {
+		E20DB8E322EFF4EE001856CE /* SignUpForm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E20DB90C22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "LoginForm" */;
+			buildConfigurationList = E20DB90C22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "SignUpForm" */;
 			buildPhases = (
 				E20DB8E022EFF4EE001856CE /* Sources */,
 				E20DB8E122EFF4EE001856CE /* Frameworks */,
@@ -167,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = LoginForm;
+			name = SignUpForm;
 			productName = LoginForm;
-			productReference = E20DB8E422EFF4EE001856CE /* LoginForm.app */;
+			productReference = E20DB8E422EFF4EE001856CE /* SignUpForm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E20DB8F722EFF4EF001856CE /* LoginFormTests */ = {
+		E20DB8F722EFF4EF001856CE /* SignUpFormTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E20DB90F22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "LoginFormTests" */;
+			buildConfigurationList = E20DB90F22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "SignUpFormTests" */;
 			buildPhases = (
 				E20DB8F422EFF4EF001856CE /* Sources */,
 				E20DB8F522EFF4EF001856CE /* Frameworks */,
@@ -185,14 +185,14 @@
 			dependencies = (
 				E20DB8FA22EFF4EF001856CE /* PBXTargetDependency */,
 			);
-			name = LoginFormTests;
+			name = SignUpFormTests;
 			productName = LoginFormTests;
-			productReference = E20DB8F822EFF4EF001856CE /* LoginFormTests.xctest */;
+			productReference = E20DB8F822EFF4EF001856CE /* SignUpFormTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E20DB90222EFF4EF001856CE /* LoginFormUITests */ = {
+		E20DB90222EFF4EF001856CE /* SignUpFormUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E20DB91222EFF4EF001856CE /* Build configuration list for PBXNativeTarget "LoginFormUITests" */;
+			buildConfigurationList = E20DB91222EFF4EF001856CE /* Build configuration list for PBXNativeTarget "SignUpFormUITests" */;
 			buildPhases = (
 				E20DB8FF22EFF4EF001856CE /* Sources */,
 				E20DB90022EFF4EF001856CE /* Frameworks */,
@@ -203,9 +203,9 @@
 			dependencies = (
 				E20DB90522EFF4EF001856CE /* PBXTargetDependency */,
 			);
-			name = LoginFormUITests;
+			name = SignUpFormUITests;
 			productName = LoginFormUITests;
-			productReference = E20DB90322EFF4EF001856CE /* LoginFormUITests.xctest */;
+			productReference = E20DB90322EFF4EF001856CE /* SignUpFormUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E20DB8DF22EFF4EE001856CE /* Build configuration list for PBXProject "LoginForm" */;
+			buildConfigurationList = E20DB8DF22EFF4EE001856CE /* Build configuration list for PBXProject "SignUpForm" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -244,9 +244,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E20DB8E322EFF4EE001856CE /* LoginForm */,
-				E20DB8F722EFF4EF001856CE /* LoginFormTests */,
-				E20DB90222EFF4EF001856CE /* LoginFormUITests */,
+				E20DB8E322EFF4EE001856CE /* SignUpForm */,
+				E20DB8F722EFF4EF001856CE /* SignUpFormTests */,
+				E20DB90222EFF4EF001856CE /* SignUpFormUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,12 +334,12 @@
 /* Begin PBXTargetDependency section */
 		E20DB8FA22EFF4EF001856CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E20DB8E322EFF4EE001856CE /* LoginForm */;
+			target = E20DB8E322EFF4EE001856CE /* SignUpForm */;
 			targetProxy = E20DB8F922EFF4EF001856CE /* PBXContainerItemProxy */;
 		};
 		E20DB90522EFF4EF001856CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E20DB8E322EFF4EE001856CE /* LoginForm */;
+			target = E20DB8E322EFF4EE001856CE /* SignUpForm */;
 			targetProxy = E20DB90422EFF4EF001856CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -489,7 +489,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LoginForm/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SignUpForm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +510,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = LoginForm/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SignUpForm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,7 +538,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginForm.app/LoginForm";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUpForm.app/SignUpForm";
 			};
 			name = Debug;
 		};
@@ -558,7 +558,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginForm.app/LoginForm";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUpForm.app/SignUpForm";
 			};
 			name = Release;
 		};
@@ -603,7 +603,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E20DB8DF22EFF4EE001856CE /* Build configuration list for PBXProject "LoginForm" */ = {
+		E20DB8DF22EFF4EE001856CE /* Build configuration list for PBXProject "SignUpForm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E20DB90A22EFF4EF001856CE /* Debug */,
@@ -612,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E20DB90C22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "LoginForm" */ = {
+		E20DB90C22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "SignUpForm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E20DB90D22EFF4EF001856CE /* Debug */,
@@ -621,7 +621,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E20DB90F22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "LoginFormTests" */ = {
+		E20DB90F22EFF4EF001856CE /* Build configuration list for PBXNativeTarget "SignUpFormTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E20DB91022EFF4EF001856CE /* Debug */,
@@ -630,7 +630,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E20DB91222EFF4EF001856CE /* Build configuration list for PBXNativeTarget "LoginFormUITests" */ = {
+		E20DB91222EFF4EF001856CE /* Build configuration list for PBXNativeTarget "SignUpFormUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E20DB91322EFF4EF001856CE /* Debug */,
