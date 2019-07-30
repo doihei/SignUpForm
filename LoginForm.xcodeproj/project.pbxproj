@@ -14,6 +14,11 @@
 		E20DB8F222EFF4EF001856CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20DB8F022EFF4EF001856CE /* LaunchScreen.storyboard */; };
 		E20DB8FD22EFF4EF001856CE /* LoginFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DB8FC22EFF4EF001856CE /* LoginFormTests.swift */; };
 		E20DB90822EFF4EF001856CE /* LoginFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DB90722EFF4EF001856CE /* LoginFormUITests.swift */; };
+		E20DB91922EFF974001856CE /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20DB91622EFF974001856CE /* RxRelay.framework */; };
+		E20DB91A22EFF974001856CE /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20DB91722EFF974001856CE /* RxSwift.framework */; };
+		E20DB91B22EFF974001856CE /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20DB91822EFF974001856CE /* RxCocoa.framework */; };
+		E20DB91E22F002A8001856CE /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DB91D22F002A8001856CE /* String+.swift */; };
+		E20DB92022F02CE5001856CE /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DB91F22F02CE5001856CE /* SubmitButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		E20DB90322EFF4EF001856CE /* LoginFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20DB90722EFF4EF001856CE /* LoginFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormUITests.swift; sourceTree = "<group>"; };
 		E20DB90922EFF4EF001856CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20DB91622EFF974001856CE /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		E20DB91722EFF974001856CE /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E20DB91822EFF974001856CE /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E20DB91D22F002A8001856CE /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		E20DB91F22F02CE5001856CE /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20DB91922EFF974001856CE /* RxRelay.framework in Frameworks */,
+				E20DB91A22EFF974001856CE /* RxSwift.framework in Frameworks */,
+				E20DB91B22EFF974001856CE /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				E20DB8FB22EFF4EF001856CE /* LoginFormTests */,
 				E20DB90622EFF4EF001856CE /* LoginFormUITests */,
 				E20DB8E522EFF4EE001856CE /* Products */,
+				E20DB91522EFF974001856CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +117,8 @@
 				E20DB8EE22EFF4EF001856CE /* Assets.xcassets */,
 				E20DB8F022EFF4EF001856CE /* LaunchScreen.storyboard */,
 				E20DB8F322EFF4EF001856CE /* Info.plist */,
+				E20DB91D22F002A8001856CE /* String+.swift */,
+				E20DB91F22F02CE5001856CE /* SubmitButton.swift */,
 			);
 			path = LoginForm;
 			sourceTree = "<group>";
@@ -125,6 +141,16 @@
 			path = LoginFormUITests;
 			sourceTree = "<group>";
 		};
+		E20DB91522EFF974001856CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E20DB91822EFF974001856CE /* RxCocoa.framework */,
+				E20DB91622EFF974001856CE /* RxRelay.framework */,
+				E20DB91722EFF974001856CE /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +161,7 @@
 				E20DB8E022EFF4EE001856CE /* Sources */,
 				E20DB8E122EFF4EE001856CE /* Frameworks */,
 				E20DB8E222EFF4EE001856CE /* Resources */,
+				E20DB91C22EFF983001856CE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,12 +278,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E20DB91C22EFF983001856CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E20DB8E022EFF4EE001856CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E20DB8EA22EFF4EE001856CE /* ViewController.swift in Sources */,
+				E20DB92022F02CE5001856CE /* SubmitButton.swift in Sources */,
+				E20DB91E22F002A8001856CE /* String+.swift in Sources */,
 				E20DB8E822EFF4EE001856CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +485,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LoginForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LoginForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
