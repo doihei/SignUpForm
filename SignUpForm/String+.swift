@@ -15,10 +15,18 @@ extension String {
     }
     
     func isValidUsername() -> Bool {
-        return NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z]{7,}").evaluate(with: self)
+        return NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z]+").evaluate(with: self)
     }
     
     func isValidPassword() -> Bool {
-        return NSPredicate(format:"SELF MATCHES %@", "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$").evaluate(with: self)
+        return NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z]+").evaluate(with: self)
     }
+    
+//    func isValidUsername() -> Bool {
+//        return NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z]{7,}").evaluate(with: self)
+//    }
+//
+//    func isValidPassword() -> Bool {
+//        return NSPredicate(format:"SELF MATCHES %@", "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$").evaluate(with: self)
+//    }
 }

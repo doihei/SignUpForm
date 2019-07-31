@@ -13,55 +13,37 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginForm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SignUpForm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="zaG-em-rSN">
-                                <rect key="frame" x="32" y="194" width="311" height="224"/>
+                                <rect key="frame" x="32" y="64" width="311" height="404"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-LD-Ypw">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="160"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="340"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0LZ-YJ-9k6">
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="4PX-o0-MaK" customClass="FormView" customModule="SignUpForm" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="311" height="70"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYb-ht-2fy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="30"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVh-VE-kjo">
-                                                        <rect key="frame" x="0.0" y="40" width="311" height="30"/>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y7m-hE-HH9">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="M6i-GS-jzG" customClass="FormView" customModule="SignUpForm" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="90" width="311" height="70"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsL-aS-fZm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="30"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JH2-tE-cev">
-                                                        <rect key="frame" x="0.0" y="40" width="311" height="30"/>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES" textContentType="password"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="TE7-XO-zSs" customClass="FormView" customModule="SignUpForm" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="180" width="311" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="70" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-d0-u9X" customClass="FormView" customModule="SignUpForm" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="270" width="311" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-7F-f7s" customClass="SubmitButton" customModule="LoginForm" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="192" width="311" height="32"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-7F-f7s" customClass="SubmitButton" customModule="SignUpForm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="372" width="311" height="32"/>
                                         <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="iEs-pz-SJ5"/>
@@ -82,15 +64,17 @@
                         <constraints>
                             <constraint firstItem="zaG-em-rSN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Mv-UM-AQK"/>
                             <constraint firstItem="zaG-em-rSN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="7de-jp-dLZ"/>
-                            <constraint firstItem="zaG-em-rSN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="MFd-q5-3Ee"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zaG-em-rSN" secondAttribute="trailing" constant="32" id="oQ2-J1-pTI"/>
+                            <constraint firstItem="zaG-em-rSN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ukB-ds-pZc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="uVh-VE-kjo" id="kEC-ax-xU8"/>
-                        <outlet property="passwordTextField" destination="JH2-tE-cev" id="2aQ-in-gWz"/>
+                        <outlet property="confirmPasswordFormView" destination="aeS-d0-u9X" id="as0-ZS-rVy"/>
+                        <outlet property="emailFormView" destination="M6i-GS-jzG" id="KFl-5P-yLG"/>
+                        <outlet property="passwordFormView" destination="TE7-XO-zSs" id="s4B-JL-PRe"/>
                         <outlet property="submitButton" destination="5HN-7F-f7s" id="f4c-q8-rX2"/>
+                        <outlet property="usernameFormView" destination="4PX-o0-MaK" id="ESp-ae-fV3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

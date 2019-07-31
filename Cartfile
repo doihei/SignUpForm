@@ -1,2 +1,5 @@
 ## Rx
 github "ReactiveX/RxSwift" "5.0.1"
+
+## UI
+github "AliSoftware/Reusable" "4.1.0"
