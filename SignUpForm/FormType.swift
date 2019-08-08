@@ -57,4 +57,17 @@ enum FormType: Int, CaseIterable {
             return .password
         }
     }
+    
+    var caution: String {
+        switch self {
+        case .username:
+            return "半角英数字6文字以上にしてください"
+        case .email:
+            return "メールアドレスが不正です"
+        case .password:
+            return "半角数字、半角英大文字、半角英小文字を含んでください"
+        case .confirmPassword:
+            return "パスワード確認とパスワードが異なっています"
+        }
+    }
 }

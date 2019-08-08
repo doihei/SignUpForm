@@ -39,15 +39,40 @@ final class ViewController: UIViewController {
     }
     
     private func bind() {
+
+        let username = usernameFormView.rx.textFieldText.orEmpty.share(replay: 1)
+        let email = emailFormView.rx.textFieldText.orEmpty.share(replay: 1)
+        let password = passwordFormView.rx.textFieldText.orEmpty.share(replay: 1)
+        let confirmPassword = confirmPasswordFormView.rx.textFieldText.orEmpty.share(replay: 1)
+        
+        username
+            .filter { !$0.isEmpty }
+            .map { $0.isValidUsername() }
+            .bind(to: usernameFormView.rx.isCautionLabelHidden)
+            .disposed(by: disposeBag)
+        
+        email
+            .filter { !$0.isEmpty }
+            .map { $0.isValidEmail() }
+            .bind(to: emailFormView.rx.isCautionLabelHidden)
+            .disposed(by: disposeBag)
+        
+        password
+            .filter { !$0.isEmpty }
+            .map { $0.isValidPassword() }
+            .bind(to: passwordFormView.rx.isCautionLabelHidden)
+            .disposed(by: disposeBag)
         
         Observable
-            .combineLatest(
-                usernameFormView.rx.textFieldText.orEmpty,
-                emailFormView.rx.textFieldText.orEmpty,
-                passwordFormView.rx.textFieldText.orEmpty,
-                confirmPasswordFormView.rx.textFieldText.orEmpty
-            ) { username, email, password, confirmPassword in
-                username.isValidUsername() && email.isValidEmail() && password.isValidPassword() && (password == confirmPassword)
+            .combineLatest(password, confirmPassword) { password, confirmPassword in
+                password == confirmPassword
+            }
+            .bind(to: confirmPasswordFormView.rx.isCautionLabelHidden)
+            .disposed(by: disposeBag)
+        
+        Observable
+            .combineLatest(username, email, password, confirmPassword) { username, email, password, confirmPassword in
+                 username.isValidUsername() && email.isValidEmail() && password.isValidPassword() && (password == confirmPassword)
             }
             .bind(to: submitButton.rx.isEnabled)
             .disposed(by: disposeBag)

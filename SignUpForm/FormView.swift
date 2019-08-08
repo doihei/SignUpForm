@@ -15,6 +15,8 @@ final class FormView: UIView, NibOwnerLoadable {
     
     @IBOutlet fileprivate weak var titleLabel: UILabel!
     
+    @IBOutlet fileprivate weak var cautionLabel: UILabel!
+    
     @IBOutlet fileprivate weak var textField: UITextField!
     
     override init(frame: CGRect) {
@@ -34,6 +36,7 @@ extension Reactive where Base: FormView {
     var type: Binder<FormType> {
         return Binder(base) { view, type in
             view.titleLabel.text = type.title
+            view.cautionLabel.text = type.caution
             view.textField.keyboardType = type.keyboardType
             view.textField.isSecureTextEntry = type.isSecureTextEntry
             view.textField.textContentType = type.textContentType
@@ -42,5 +45,9 @@ extension Reactive where Base: FormView {
     
     var textFieldText: ControlProperty<String?> {
         return base.textField.rx.text
+    }
+    
+    var isCautionLabelHidden: Binder<Bool> {
+        return base.cautionLabel.rx.isHidden
     }
 }
